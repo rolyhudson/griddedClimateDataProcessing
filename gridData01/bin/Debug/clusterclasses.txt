@@ -1,0 +1,1 @@
+"T17.12_RH94.5_Wlight-gentle breeze","T26.63_RH74.8_Wlight-gentle breeze","T15.19_RH78.52_Wlight-gentle breeze","T25.89_RH82.19_Wcalm-light breeze","T26.93_RH80.53_Wgentle-fresh breeze","T25.59_RH88.45_Wcalm-light breeze","T17.75_RH85.42_Wcalm-light breeze","T24.72_RH88.02_Wgentle-fresh breeze","T28.05_RH67.99_Wgentle-fresh breeze","T25.73_RH84.43_Wlight-gentle breeze",

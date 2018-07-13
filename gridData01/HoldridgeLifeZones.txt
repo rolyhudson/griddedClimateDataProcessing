@@ -1,0 +1,43 @@
+Tropical desert
+Tropical desert scrub
+Tropical thorn woodland
+Tropical very dry forest
+Tropical dry forest
+Tropical moist forest
+Tropical wet forest
+Tropical rain forest
+Subtropical desert
+Subtropical desert scrub
+Subtropical thorn woodland
+Subtropical dry forest
+Subtropical moist forest
+Subtropical wet forest
+Subtropical rain forest
+Warm temperate desert
+Warm temperate desert scrub
+Warm temperate thorn scrub
+Warm temperate dry forest
+Warm temperate moist forest
+Warm temperate wet forest
+Warm temperate rain forest
+Cool temperate desert
+Cool temperate desert scrub
+Cool temperate steppe
+Cool temperate moist forest
+Cool temperate wet forest
+Cool temperate rain forest
+Boreal desert
+Boreal dry scrub
+Boreal moist forest
+Boreal wet forest
+Boreal rain forest
+Subpolar dry tundra
+Subpolar moist tundra
+Subpolar wet tundra
+Subpolar rain tundra
+Polar desert
+Polar desert
+Polar desert
+Ice
+Ice
+Ice
