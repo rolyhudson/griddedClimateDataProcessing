@@ -228,6 +228,23 @@ namespace gridData01
             }
 
         }
+        private void writeFlatClimateData(object sender, EventArgs e)
+        {
+            if (saveFilePath("Choose where to write the unclassfied climate data", "csv files (*.csv)|*.csv|All files (*.*)|*.*", "csv"))
+            {
+                WriteFlatFile wff = new WriteFlatFile(this.dataset, this.filepath);
+                wff.writeToCSV();
+            }
+
+        }
+        private void writeFlatJSONClimateData(object sender, EventArgs e)
+        {
+            if (getFolderPath("Choose where to write the unclassfied climate data"))
+            {
+                WriteSparkJSON wff = new WriteSparkJSON(this.dataset, this.filepath);
+                wff.writeRecords();
+            }
+        }
         private List<string> classifcationsToOutput()
         {
             List<string> output = new List<string>();

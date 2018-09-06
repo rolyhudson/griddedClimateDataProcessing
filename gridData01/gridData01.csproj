@@ -135,6 +135,8 @@
     <Compile Include="ReadClimaSchemaCollection.cs" />
     <Compile Include="WeatherData.cs" />
     <Compile Include="WriteClimaSchemaCollection.cs" />
+    <Compile Include="WriteFlatFile.cs" />
+    <Compile Include="WriteSparkJSON.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
