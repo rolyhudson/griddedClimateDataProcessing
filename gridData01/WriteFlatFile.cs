@@ -26,7 +26,7 @@ namespace gridData01
             StringBuilder line = new StringBuilder();
             //header
 
-            line.Append("latitude,longitude,yr,month");
+            line.Append("latitude,longitude,elevation,datetime");
             foreach(DataField df in dataset.classifications[0].dataFieldsCompact)
             {
                 line.Append(","+df.name);
@@ -35,12 +35,16 @@ namespace gridData01
             foreach (DataPoint dp in dataset.classifications[0].dataPoints)
             {
                 LocationPoint lp = dataset.gridPoints[pNum];
-                for(int y = 0;y<5;y++)
+                for(int y = 0;y<10;y++)
                 {
                     for(int m = 0;m<12;m++)
                     {
                         line = new StringBuilder();
-                        line.Append(lp.latitude + "," + lp.longitude+","+(y+dataset.srtYr)+","+m);
+                        String datestring = (y + dataset.srtYr)+"-";
+                        String month = (m + 1).ToString();
+                        if (month.Length == 1) datestring += "0" + month + "-01";
+                        else datestring += month + "-01";
+                        line.Append(Math.Round(lp.latitude,5) + "," + Math.Round(lp.longitude,5)+"," + Math.Round(lp.altitude, 5) + "," + datestring);
                         for(int i=0;i< dataset.classifications[0].dataFieldsCompact.Count;i++)
                         {
                             //add the value for the year and month

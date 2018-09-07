@@ -22,7 +22,7 @@ namespace gridData01
 
             string[] cf = { "temp","rh","precip" };
             List<string> cfields = new List<string>();
-            fields.AddRange(cf);
+            cfields.AddRange(cf);
 
             WeatherClass weather = new WeatherClass();
             weather.setDataCollection(dataset.gridPoints.Count, dataset.years);
