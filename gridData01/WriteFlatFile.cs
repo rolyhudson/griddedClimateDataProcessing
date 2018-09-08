@@ -40,11 +40,8 @@ namespace gridData01
                     for(int m = 0;m<12;m++)
                     {
                         line = new StringBuilder();
-                        String datestring = (y + dataset.srtYr)+"-";
-                        String month = (m + 1).ToString();
-                        if (month.Length == 1) datestring += "0" + month + "-01";
-                        else datestring += month + "-01";
-                        line.Append(Math.Round(lp.latitude,5) + "," + Math.Round(lp.longitude,5)+"," + Math.Round(lp.altitude, 5) + "," + datestring);
+                        
+                        line.Append(Math.Round(lp.latitude,5) + "," + Math.Round(lp.longitude,5)+"," + Math.Round(lp.altitude, 5) + "," + ISO8601datetime(y, m));
                         for(int i=0;i< dataset.classifications[0].dataFieldsCompact.Count;i++)
                         {
                             //add the value for the year and month
@@ -57,6 +54,16 @@ namespace gridData01
                 pNum++;
             }
             sw.Close();
+        }
+        private string ISO8601datetime(int y,int m)
+        {
+            //yyyy-MM-dd'T'HH:mm:ssZ
+            String datestring = (y + dataset.srtYr) + "-";
+            String month = (m + 1).ToString();
+            if (month.Length == 1) datestring += "0" + month + "-01T00:00:00Z";
+            else datestring += month + "-01T00:00:00Z";
+
+            return datestring;
         }
         private void writeClassArray(string propname, ref StringBuilder sb, DataPoint dp, int y,int m)
         {
